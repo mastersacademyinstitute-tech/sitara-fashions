@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sitara Fashions | Luxury Suit House</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="supabase-config.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><strong>Sitara Fashions</strong><span>Kota luxury suits</span></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="site-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="craftsmanship.html">Craft</a>
+      <a href="lookbook.html">Lookbook</a>
+      <a href="wholesale.html">Wholesale</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-scroll">
+      <div class="hero-sticky">
+        <canvas id="hero-canvas" aria-label="Scroll animation of a luxury suit"></canvas>
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <span class="eyebrow">Premium occasion wear from Kota</span>
+          <h1>Sitara Fashions</h1>
+          <p>Luxury suits crafted for weddings, festive evenings, business celebrations, and statement wardrobes. Scroll to reveal the silhouette, texture, and finish frame by frame.</p>
+          <div class="hero-actions">
+            <a class="button" href="order.html">Order on WhatsApp</a>
+            <a class="ghost-button" href="products.html">View Products</a>
+          </div>
+        </div>
+        <div class="scroll-meter">
+          <span>Scroll</span>
+          <span class="meter-track"><span class="meter-fill"></span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="intro-grid">
+        <div class="copy-stack">
+          <span class="eyebrow">Tailored presence</span>
+          <h2>Designed for women who prefer quiet confidence.</h2>
+        </div>
+        <div class="copy-stack">
+          <p>Sitara Fashions brings refined suit styling, polished cuts, and occasion-ready detailing to customers in Kota and across India. The collection balances rich fabric presence with clean modern fit.</p>
+          <div class="stats">
+            <div class="stat"><strong>24K</strong><span>Happy Customers</span></div>
+            <div class="stat"><strong>All India</strong><span>Delivery</span></div>
+            <div class="stat"><strong>Kota</strong><span>Rajasthan</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="split">
+        <div class="copy-stack">
+          <span class="eyebrow">Signature edits</span>
+          <h2>Wedding, reception, party, and formal suit collections.</h2>
+        </div>
+        <div class="cards">
+          <article class="product-card"><img src="assets/products/magenta-wedding-suit.png" alt="Magenta embroidered wedding suit"><div><h3>Royal Wedding Suit</h3><p>Structured, sharp, and ceremonial for grand entries.</p></div></article>
+          <article class="product-card"><img src="assets/products/floral-pink-evening-suit.jpeg" alt="Floral pink evening suit"><div><h3>Evening Statement</h3><p>Deep tones and refined finish for receptions and events.</p></div></article>
+          <article class="product-card"><img src="assets/products/green-new-arrival-suit.png" alt="Green new arrival suit"><div><h3>Executive Formal</h3><p>Clean styling for business occasions and premium gifting.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="order-panel">
+        <span class="eyebrow">Direct orders</span>
+        <h2>Speak with Sitara Fashions on WhatsApp.</h2>
+        <p>Share your size, preferred color, occasion date, and delivery city. Our team will guide you with collection options and ordering details.</p>
+        <form class="lead-form" data-lead-form="home-order">
+          <div class="form-row">
+            <label>Name<input name="name" autocomplete="name" required></label>
+            <label>Phone<input name="phone" autocomplete="tel" required></label>
+          </div>
+          <div class="form-row">
+            <label>City<input name="city" autocomplete="address-level2"></label>
+            <label>Interest<select name="interest"><option>Wedding suit</option><option>Reception suit</option><option>Wholesale</option><option>Custom enquiry</option></select></label>
+          </div>
+          <label>Message<textarea name="message" placeholder="Size, color, occasion date, or quantity"></textarea></label>
+          <button class="button" type="submit">Save Enquiry</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+        <div class="action-row">
+          <a class="button" href="https://wa.me/917891424674?text=Hello%20Sitara%20Fashions%2C%20I%20want%20to%20order%20a%20luxury%20suit." target="_blank" rel="noreferrer">WhatsApp 7891424674</a>
+          <a class="ghost-button" href="contact.html">Store Details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="wa-float" href="https://wa.me/917891424674" target="_blank" rel="noreferrer">Order WhatsApp</a>
+  <footer class="site-footer">
+    <div class="brand"><strong>Sitara Fashions</strong><span>sitarafashions.com</span></div>
+    <div class="footer-links"><a href="tel:7357570186">7357570186</a><a href="https://instagram.com/sitarafashions.india">@sitarafashions.india</a><a href="contact.html">3 ga 50 Vigyan Nagar, Kota</a></div>
+  </footer>
+</body>
+</html>
