@@ -378,6 +378,53 @@ p {
   text-transform: uppercase;
 }
 
+.featured-product {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+}
+
+.featured-product .product-gallery {
+  background: rgba(16, 16, 16, 0.88);
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 12px;
+}
+
+.featured-product .product-gallery img {
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.featured-product .product-gallery img:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.featured-product .product-copy {
+  align-content: center;
+}
+
+.product-points {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-points li {
+  color: rgba(247, 241, 230, 0.74);
+  list-style: none;
+}
+
+.product-points li::before {
+  color: var(--gold);
+  content: "• ";
+}
+
 .lookbook-grid {
   display: grid;
   gap: 14px;
@@ -574,6 +621,10 @@ p {
   .lookbook-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .featured-product {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
@@ -621,6 +672,10 @@ p {
   .cards,
   .lookbook-grid {
     grid-template-columns: 1fr;
+  }
+
+  .featured-product .product-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .site-footer {
